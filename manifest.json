@@ -1,0 +1,19 @@
+{
+	"name": "リスティング広告隠し",
+	"manifest_version": 3,
+	"version": "0.1",
+	"permissions": ["activeTab","scripting"],
+	"action": {},
+    "content_scripts": [{
+        "matches": ["https://search.yahoo.co.jp/*","https://www.google.com/*"],
+        "run_at": "document_end",
+        "all_frames": true,
+        "js": ["background.js"]
+    }],
+    "icons": {
+        "16": "./neko_16x16.png",
+        "32": "./neko_32x32.png",
+        "48": "./neko_48x48.png",
+        "128": "./neko_128x128.png"
+    }
+}
