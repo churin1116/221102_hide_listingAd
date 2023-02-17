@@ -5,7 +5,7 @@
 	"permissions": ["activeTab","scripting"],
 	"action": {},
     "content_scripts": [{
-        "matches": ["https://search.yahoo.co.jp/*","https://www.google.com/*"],
+        "matches": ["https://search.yahoo.co.jp/*","https://www.google.com/*","https://www.bing.com/*"],
         "run_at": "document_end",
         "all_frames": true,
         "js": ["background.js"]
